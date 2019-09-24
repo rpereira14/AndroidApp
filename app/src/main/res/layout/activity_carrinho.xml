@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_gravity="center|top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carrinho de compras" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_carrinho"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="160dp"/>
+
+    <Button
+        android:id="@+id/button_orcamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Fazer Orçamento" />
+
+    <Button
+        android:id="@+id/button_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Continuar a escolher" />
+
+    <TextView
+        android:id="@+id/tv_preco_final"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: xx,xx€"
+        android:textSize="24sp"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="120dp"
+        android:layout_marginLeft="16dp"/>
+
+</FrameLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <!--<FrameLayout
+        android:id="@+id/your_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>-->
+
+    <EditText
+        android:id="@+id/et_search_inventario"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_gravity="start"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:inputType="text" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp" />
+
+
+
+    <ImageButton
+        android:layout_gravity="end"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="0dp"
+        android:id="@+id/imageButton4"
+        android:layout_width="60dp"
+        android:layout_height="61dp"
+        app:srcCompat="@android:drawable/ic_menu_search"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/quantity_inventario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qtd"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="56dp"/>
+
+    <TextView
+        android:id="@+id/product_name_text"
+        android:layout_marginTop="56dp"
+        android:layout_marginLeft="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Produto" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton4"
+        android:layout_width="68dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="60dp"
+        android:clickable="true"
+        app:backgroundTint="#F44336"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+
+</FrameLayout>
